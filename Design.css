@@ -1,0 +1,248 @@
+/* Landscape 
+@media only screen 
+  and (min-device-width: 740px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 5vw;
+  }*/
+  @media (min-device-width: 240px) {
+    body {font-size:1.0rem;} /* El font size seria realizar lo mas responsive posible para ciertos dispositivos*/
+      img {
+        width: 100%;
+        height:100%;
+        }
+        body{
+          background-size: 100%;
+        }
+     
+  }
+  @media (min-width: 640px)  { body {font-size:1rem;} 
+  
+  }
+  
+@media (min-width:960px) { body {font-size:1.2rem; }  }
+@media (min-width:1100px) { body {font-size:1.2rem;}  } 
+
+html {
+    position: relative;
+    height: 100%;
+    font-size: 1.1em;
+    font-style: italic;
+    margin: 0;
+    padding:0;
+  }
+
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+  color: rgba(253, 253, 253, 0.952);
+  background-position: center;
+  background-repeat: no-repeat;
+    background-image: url(/Front/51yRtt6Ry+L._AC_SL1001_.jpg);
+     background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+   flex-flow: column;
+    /*background-image: url(../Magicthegathering-logo.svg.png); */
+    /*background-position: center center;*/
+ }
+
+  
+ nav.menu{ /* si yo pongo pegado el nav al menu digo que la class menu esta asociada al elemento nav*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center; 
+    /*line-height: 50px;*/
+    letter-spacing: 3px;
+    background-color:  rgb(163, 184, 194);
+   color: rgb(15, 15, 14);
+}
+nav.menu ul{
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+}
+nav.menu ul li{
+    float: left;
+   color: rgb(8, 8, 8);
+    margin: 10px;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+nav.menu a{
+    color: rgb(0, 0, 0);
+}
+
+nav p{
+    color: rgb(151, 22, 22);
+    /*background-color: transparent;*/
+    background-color: rgb(192, 118, 118);
+}
+nav p a{
+    color: rgba(175, 32, 32, 0.507);
+   /* background-color: transparent;*/
+   background-color: rgb(167, 126, 126);
+}
+.inicio{
+    margin-top: 20px;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.inicio h1{
+    font-size: 2em;
+}
+.inicio p{
+    word-spacing: 2px;
+}
+
+#ck{
+text-align: start;
+ word-spacing: 10px;
+}
+#ck ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#ck li{
+    float: left;
+}
+#ck ul li a{
+    display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.imgFigure img{
+  position:inherit;
+  width: 100%;
+  
+  /*Your container is 100% of width and your element containers take 20+20+40+10+10=100% also. Now if you zoom, there won't be any free space to expand into, 
+  so you need to specify the width of these elements.*/
+ 
+}
+
+#secArticles{
+  margin: 25px;
+}
+#secArticles h1{
+  margin: 30px;
+}
+#secArticles h2{
+  margin: 30px;
+}
+#secArticles h3{
+  margin: 30px;
+}
+/*
+#redes{
+  font-size: 15px;
+  position:fixed;
+  bottom: 45px;
+  width: 100%;
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.7;
+}
+#redes:hover{
+  /*opacity: 0.7;*/
+/*
+#redes h2{
+ padding-left: 15px;
+ padding-bottom: 5px;
+}
+#redes ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+   
+}
+#redes ul li{
+    float: left;
+    
+}
+#redes ul li a{
+  text-align: center;
+  text-decoration: none;
+}
+.classArticle{ font-size: 1.4rem;}*/
+
+#articlelast{
+padding-bottom: 50px;
+}
+footer{
+  
+  margin-top: auto;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+   background-color:  rgb(163, 184, 194);
+   opacity: 0.7;
+  /* padding-left: 20px;
+   padding-right: 20px;
+
+Para que tu footer se quede siempre en el fondo intenta sacarlo 
+del div y asignale 
+a html las propiedades position:relative y min-height: 100%   
+*/
+}
+#copyId{
+ margin-bottom: 0px;
+}
+#copyId ul{
+  float:left;
+  font-size: 20px;
+  color: rgb(15, 15, 14);
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+#redes2{
+  float:right;
+  padding: auto;
+}
+#redes2 h1{
+
+ font-size: 15px;
+}
+#redes2 ul{
+  padding: 0px;
+  list-style-type: none;
+  margin: 0;
+  margin-right: 70px;
+  overflow: hidden;
+  text-align: center; 
+  font-size: 15px;
+}
+ 
+#redes2 ul li{
+  padding-right: 10px;
+  float: right;
+  text-align: center;
+}
+
+#redes2 ul li a{
+  word-spacing: 30px;
+  text-decoration: none;
+}
+/*
+footer p{
+  text-align: center;
+  color: rgb(58, 106, 151);
+}*/
+/*
+.footerImage{
+  
+  padding: 12px 0px 0px 0px;
+  color: rgb(49, 44, 43);
+  background-color: rgb(180, 119, 101);
+}*/
